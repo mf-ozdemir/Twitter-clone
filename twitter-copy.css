@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+max-width: 1422px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 10px;
+background-color: #15202B;
+color: white;
+}
+
+.row {
+ margin: 0 60px;
+}
+
+.left-nav {
+    top: 16px;
+    position: sticky;
+}
+
+.left-menu > ul {
+    padding: 0;
+    fill: whitesmoke;
+}
+
+.left-menu > ul > li {
+    list-style-type: none;
+    padding:15px 0;
+    border: none;
+    display: flex;
+}
+
+.left-menu > ul > li > button {
+    border: none;
+    background-color: #15202B;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1280px) {
+
+    li > a {
+        display: none;
+    }
+    li  {
+        display: flex;
+        justify-content: end;
+    } 
+
+
+    }
+
+li > a {
+         
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+a:hover {
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: rgb(30, 45, 59);
+    border-radius: 9999px;
+      }
+
+
+svg {
+    width: 35px;
+    margin-right: 20px;
+}
+
+.tweetle-button {
+    display: flex;
+    justify-content: center;
+}
+
+.tweetle-button > a {
+    font-size: 20px;
+    width: 250px;
+    margin-right: 80px;
+    background-color: rgb(26, 140, 216);
+    border-radius: 9999px;
+}
+
+.left-profil {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    
+}
+
+.left-profil-foto img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15px; 
+}
+
+.left-profil h6  {
+    display: flex;
+    color: azure;
+    margin: 5px 100px 0 10px;
+}
+
+.left-profil p {
+    color: rgb(100, 100, 100);
+    margin-left: 5px;
+}
+
+.left-profil svg {
+    margin-top: 5px;
+    fill:  white;
+    width: 20px;
+}
+
+
+.col-6 {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+} 
+
+h4 {
+    color: white;
+    padding: 10px ;   
+}
+
+.profil-foto img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.ust-baslik-anasayfa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ust-baslik-anasayfa a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.ust-baslik-anasayfa svg {
+    fill: white;
+    width: 20px;
+}
+
+.ust-baslik {
+    border-bottom: 1px solid gray;
+
+}
+
+.ust-baslik-intext input {
+    background-color: #15202B;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top:15px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.ust-baslik {
+    display: flex;
+    flex-direction: column;
+}
+
+.ust-baslik-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 15px 75px;  
+}
+
+.ust-baslik-menu-icon svg {
+    width: 20px;
+    fill: rgb(29, 155, 240);
+}
+
+.foto-intext {
+    display: flex;
+}
+
+.ust-baslik button {
+    background-color: rgb(26, 140, 216);
+    border-radius: 9999px;
+}
+
+.tweet-box {
+ border-bottom: 1px solid gray;
+ fill: rgb(136, 153, 166);
+}
+
+.tweet-box-text svg {
+    float: right;
+    width: 20px;
+}
+
+.tweet-box-icerik p {
+    padding: 0 80px;
+}
+
+.tweet-box-text .profil-foto {
+    height: 1px;
+}
+
+.tweet-box-photo img {
+    max-width: 500px;
+    width: 82%;
+    margin-left: 70px;
+    border-radius: 20px;
+}
+
+.tweet-box-altbar {
+    padding:0  70px;
+    
+}
+
+.tweet-box-altbar svg {
+    width: 20px;
+    margin: 10px;
+}
+
+
+.etiket {
+    color: rgb(136, 153, 166);  
+}
+
+/* col-3 */
+
+.search {
+    position: sticky;
+    top: 0;
+}
+
+.search > svg {
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    width: 30px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: rgb(29, 46, 61);
+    border-style: none;
+    padding: 12px;
+    width: 300px;
+    border-color: rgb(29, 155, 240);
+}
+
+.gundem-box {
+    margin-top: 10px;
+    background-color: rgb(29, 46, 61);
+    border-radius: 10px;
+    padding:12px 0 12px 12px;
+    position: fixed;
+}
+
+.gundem-ust-baslik {
+    padding-bottom: 12px;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold;
+}
+
+.gundem-ust-baslik svg {
+    width: 25px;
+    fill: white;
+}
+
+.gundem {
+    margin-bottom: 12px;
+}
+
+.gundem-baslik {
+ font-size: 13px;
+ display: flex;
+ color: darkgray;
+ justify-content: space-between;
+}
+
+.gundem-baslik svg {
+    fill: darkgrey;
+    width: 20px;
+}
+
+.gundem-hastag {
+    font-weight: bold;
+}
+
+.gundem-tweet {
+    color: darkgray;
+}
+
+.gundem-end a {
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+}
+
+.follow {
+    margin-top: 520px;
+    background-color: rgb(29, 46, 61);
+    border-radius: 10px;
+    padding-left: 12px;
+    position: fixed;
+}
+
+
+.follow-baslik {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.follow-box-profil {
+    display: flex;
+    margin-top: 15px;
+}
+
+.follow-photo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.follow-nick {
+    width: 150px;
+}
+
+.follow-button a {
+    border-radius: 9999px;
+    background-color: white;
+    color: black;
+}
